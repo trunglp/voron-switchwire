@@ -29,6 +29,9 @@ Chú ý:
 SKR mini E3 V1.2 => pin !PC13
 SKR mini E3 V2.0 => pin !PC14
 
+
+### Step 3: build firmware
+
 ```wrap
 
 pi@octopi:~/klipper $ make clean
@@ -168,6 +171,23 @@ CONFIG_HAVE_GPIO_BITBANGING=y
 CONFIG_HAVE_STRICT_TIMING=y
 CONFIG_HAVE_CHIPID=y
 CONFIG_INLINE_STEPPER_HACK=y
+
+```
+
+
+### Step 4: Copy klipper.bin  to sd card and rename to FIRMWARE.BIN => flash firmware board SKR mini E3 V1.2
+
+
+```wrap
+
+pi@octopi:~/klipper $ pwd
+/home/pi/klipper
+pi@octopi:~/klipper $ ls out/
+autoconf.h     board-link              compile_time_request.o    klipper.dict  src
+board          compile_time_request.c  compile_time_request.txt  klipper.elf
+board-generic  compile_time_request.d  klipper.bin               lib
+pi@octopi:~/klipper $
+
 
 ```
 
