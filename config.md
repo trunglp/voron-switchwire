@@ -216,4 +216,4 @@ https://www.reddit.com/r/ender3/comments/dtl8re/skr_mini_e3_12_klipper_configgui
 
 https://github.com/Klipper3d/klipper/blob/master/config/generic-bigtreetech-skr-mini-e3-v1.2.cfg
 
-
+https://github.com/Klipper3d/klipper/tree/master/config
