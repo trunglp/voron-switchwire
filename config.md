@@ -1,6 +1,6 @@
 # voron-switchwire
 
-### Setup and config voron switchwire
+### Setup and config voron switchwire on SKR Mini E3 V1.2
 
 MainsailOS or FluiddPi or Octoprint
 
