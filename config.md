@@ -24,6 +24,10 @@ make menuconfig
 ![image](https://user-images.githubusercontent.com/38026441/134791939-5e5be692-403c-4123-9cba-58fd82cee722.png)
 
 
+Chú ý: 
+
+SKR mini E3 V1.2 => pin !PC13
+SKR mini E3 V2.0 => pin !PC14
 
 ```wrap
 
@@ -166,3 +170,10 @@ CONFIG_HAVE_CHIPID=y
 CONFIG_INLINE_STEPPER_HACK=y
 
 ```
+
+
+
+https://docs.vorondesign.com/build/software/miniE3_v12_klipper.html
+
+https://www.reddit.com/r/ender3/comments/dtl8re/skr_mini_e3_12_klipper_configguide_including/
+
