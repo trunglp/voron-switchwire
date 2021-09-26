@@ -191,9 +191,29 @@ pi@octopi:~/klipper $
 
 ```
 
+### Step 5:
 
+![image](https://user-images.githubusercontent.com/38026441/134792926-88b30fc9-9c0f-48b3-9f2f-5a8ef38dc552.png)
+
+
+### Step 6:
+
+![image](https://user-images.githubusercontent.com/38026441/134792966-7c1c2778-8169-4b5c-b58e-e922c04b0a12.png)
+
+
+![image](https://user-images.githubusercontent.com/38026441/134792978-6795467a-0ef6-4870-8a6f-0f45d9111a6b.png)
+
+### Step 7:
+
+![image](https://user-images.githubusercontent.com/38026441/134793017-51418b7c-461e-4054-b9c1-c4861b09f4c2.png)
+
+
+https://www.youtube.com/watch?v=T5TGLleu3MA
 
 https://docs.vorondesign.com/build/software/miniE3_v12_klipper.html
 
 https://www.reddit.com/r/ender3/comments/dtl8re/skr_mini_e3_12_klipper_configguide_including/
+
+https://github.com/Klipper3d/klipper/blob/master/config/generic-bigtreetech-skr-mini-e3-v1.2.cfg
+
 
