@@ -1,6 +1,6 @@
 # voron-switchwire
 
-Setup and config voron switchwire
+### Setup and config voron switchwire
 
 MainsailOS or FluiddPi or Octoprint
 
@@ -8,13 +8,13 @@ MainsailOS or FluiddPi or Octoprint
 ![image](https://user-images.githubusercontent.com/38026441/134792005-bcf636cd-efd6-4438-a860-19235d42c0d4.png)
 
 
-Step 1: 
+### Step 1: 
 
 git clone https://github.com/Klipper3d/klipper
 
 ./klipper/scripts/install-octopi.sh
 
-Step 2:
+### Step 2:
 
 cd ~/klipper/
 make menuconfig
