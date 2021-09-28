@@ -13,3 +13,5 @@ Recv: // Klipper state: Not ready
 Recv: !! MCU 'mcu' shutdown: ADC out of range
 
 ```
+
+Không thể move các axis X Y Z khi chưa homing
