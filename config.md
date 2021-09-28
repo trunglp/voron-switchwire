@@ -207,6 +207,10 @@ pi@octopi:~/klipper $
 
 ![image](https://user-images.githubusercontent.com/38026441/134793017-51418b7c-461e-4054-b9c1-c4861b09f4c2.png)
 
+### Tham Khảo
+
+![image](https://user-images.githubusercontent.com/38026441/135016846-dd2ceafe-d3d0-4a42-afac-297ca80e8b9a.png)
+
 
 https://www.youtube.com/watch?v=T5TGLleu3MA
 
