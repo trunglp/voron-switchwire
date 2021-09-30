@@ -18,16 +18,3 @@ Không thể move các axis X Y Z khi chưa homing
 
 If the motors are disabled (via an M84 or M18 command) then the motors will need to be homed again prior to movement.
 
-Kiểm tra từng trigger 
-
-```wrap 
-
-Send: QUERY_ENDSTOPS
-Recv: x:open y:open z:open
-Recv: ok
-[...]
-Send: QUERY_ENDSTOPS
-Recv: x:open y:open z:TRIGGERED
-Recv: ok
-
-```
