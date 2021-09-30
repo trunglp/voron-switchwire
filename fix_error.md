@@ -30,5 +30,10 @@ Recv: !! pid_calibrate interrupted
 
 Fix: 
 
-[verify_heater extruder]
-check_gain_time: 120
+```wrap
+[verify_heater bed]  
+heating_gain: 2 
+check_gain_time:35  
+hysteresis: 10  
+max_error: 130 
+```
