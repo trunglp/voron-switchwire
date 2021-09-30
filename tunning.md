@@ -18,3 +18,18 @@ Recv: // probe accuracy results: maximum 2.937500, minimum 2.925000, range 0.012
 Recv: ok
 
 ```
+
+### Kiểm tra từng trigger 
+
+```wrap 
+
+Send: QUERY_ENDSTOPS
+Recv: x:open y:open z:open
+Recv: ok
+[...]
+Send: QUERY_ENDSTOPS
+Recv: x:open y:open z:TRIGGERED
+Recv: ok
+
+```
+
