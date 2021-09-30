@@ -25,12 +25,13 @@ M83 or G92 E0 causing "move exceeds max extrusion"
 
 
 #### Lỗi  pid_calibrate interrupted
+
+```wrap
 Recv: // Klipper state: Shutdown
 Recv: !! pid_calibrate interrupted
 
 Fix: 
 
-```wrap
 [verify_heater bed]  
 heating_gain: 2 
 check_gain_time:35  
