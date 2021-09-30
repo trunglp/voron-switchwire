@@ -33,3 +33,25 @@ Recv: ok
 
 ```
 
+
+### PID Tune Heated Bed
+Move nozzle to the center of the bed and approximately 5-10mm above the bed surface, then run:
+
+# PID_CALIBRATE HEATER=heater_bed TARGET=100
+
+It will perform a PID calibration routine that will last about 10 minutes. Once it is finished, 
+type SAVE_CONFIG which will save the parameters into your configuration file.
+
+```wrap
+
+Send: PID_CALIBRATE HEATER=heater_bed TARGET=100
+Recv: B:43.5 /100.0 T0:55.7 /0.0
+Recv: B:43.5 /100.0 T0:55.6 /0.0
+Recv: B:43.5 /100.0 T0:55.4 /0.0
+Recv: B:43.5 /100.0 T0:55.3 /0.0
+Recv: B:43.5 /100.0 T0:55.1 /0.0
+Recv: B:43.5 /100.0 T0:55.0 /0.0
+Recv: B:43.5 /100.0 T0:55.0 /0.0
+Recv: B:43.5 /100.0 T0:54.9 /0.0
+
+```
