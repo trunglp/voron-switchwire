@@ -18,3 +18,17 @@ Không thể move các axis X Y Z khi chưa homing
 
 If the motors are disabled (via an M84 or M18 command) then the motors will need to be homed again prior to movement.
 
+#### Lỗi Move exceeds maximum extrusion (0.752mm^2 vs 0.640mm^2)
+Your printer's firmware reported an error. Due to that the ongoing print job will be cancelled. Reported error: Move exceeds maximum extrusion (0.752mm^2 vs 0.640mm^2)
+=> put M82 at the end of START_PRINT to revert the effect of M83
+M83 or G92 E0 causing "move exceeds max extrusion"
+
+
+#### Lỗi  pid_calibrate interrupted
+Recv: // Klipper state: Shutdown
+Recv: !! pid_calibrate interrupted
+
+Fix: 
+
+[verify_heater extruder]
+check_gain_time: 120
