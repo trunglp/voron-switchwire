@@ -1,4 +1,42 @@
 
+```wrap
+Send: PROBE_CALIBRATE
+Recv: // probe at 107.000,85.000 is z=3.100000
+Recv: // Starting manual Z probe. Use TESTZ to adjust position.
+Recv: // Finish with ACCEPT or ABORT command.
+Recv: // Z position: ?????? --> 8.100 <-- ??????
+Recv: ok
+[...]
+Send: TESTZ z=-8
+Recv: // Z position: ?????? --> 0.100 <-- 8.100
+Recv: ok
+[...]
+Recv: // Z position: 0.100 --> 0.200 <-- 0.300
+Recv: ok
+[...]
+Send: TESTZ z=-0.1
+Recv: // Z position: 0.000 --> 0.100 <-- 0.200
+Recv: ok
+[...]
+Send: TESTZ z=0.1
+Recv: // Z position: 0.100 --> 0.200 <-- 0.300
+Recv: ok
+[...]
+Send: TESTZ z=-0.05
+Recv: // Z position: 0.100 --> 0.150 <-- 0.200
+Recv: ok
+[...]
+Send: ACCEPT
+Recv: // probe: z_offset: 2.950
+Recv: // The SAVE_CONFIG command will update the printer config file
+Recv: // with the above and restart the printer.
+#### Recv: ok
+[...]
+Send: SAVE_CONFIG
+Recv: ok
+
+```
+
 ### Kiểm tra đầu dò xem ổn định không 
 
 ```wrap
