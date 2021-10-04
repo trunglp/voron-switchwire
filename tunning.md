@@ -96,7 +96,7 @@ Recv: B:43.5 /100.0 T0:54.9 /0.0
 
 ```
 
-### PID Tune Heated Bed
+### PID Tune HEATER Extruder
 ok B:33.4 /0.0 T0:32.7 /0.0
 #### PID_CALIBRATE HEATER=extruder TARGET=220
 
