@@ -101,9 +101,12 @@ ok B:33.4 /0.0 T0:32.7 /0.0
 #### PID_CALIBRATE HEATER=extruder TARGET=220
 
 ```wrap
+PID_CALIBRATE HEATER=extruder TARGET=220
 B:33.4 /0.0 T0:32.7 /220.0
 B:33.4 /0.0 T0:32.7 /220.0
 B:33.4 /0.0 T0:32.7 /220.0
 B:33.4 /0.0 T0:32.7 /220.0
-
+// PID parameters: pid_Kp=25.197 pid_Ki=1.098 pid_Kd=144.568
+// The SAVE_CONFIG command will update the printer config file
+// with these parameters and restart the printer.
 ```
