@@ -110,3 +110,7 @@ B:33.4 /0.0 T0:32.7 /220.0
 // The SAVE_CONFIG command will update the printer config file
 // with these parameters and restart the printer.
 ```
+
+### Pressure_Advance.md
+
+https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md
