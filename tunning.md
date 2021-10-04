@@ -83,6 +83,7 @@ type SAVE_CONFIG which will save the parameters into your configuration file.
 
 ```wrap
 
+
 Send: PID_CALIBRATE HEATER=heater_bed TARGET=100
 Recv: B:43.5 /100.0 T0:55.7 /0.0
 Recv: B:43.5 /100.0 T0:55.6 /0.0
@@ -92,5 +93,17 @@ Recv: B:43.5 /100.0 T0:55.1 /0.0
 Recv: B:43.5 /100.0 T0:55.0 /0.0
 Recv: B:43.5 /100.0 T0:55.0 /0.0
 Recv: B:43.5 /100.0 T0:54.9 /0.0
+
+```
+
+### PID Tune Heated Bed
+ok B:33.4 /0.0 T0:32.7 /0.0
+#### PID_CALIBRATE HEATER=extruder TARGET=220
+
+```wrap
+B:33.4 /0.0 T0:32.7 /220.0
+B:33.4 /0.0 T0:32.7 /220.0
+B:33.4 /0.0 T0:32.7 /220.0
+B:33.4 /0.0 T0:32.7 /220.0
 
 ```
