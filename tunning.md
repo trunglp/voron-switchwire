@@ -114,3 +114,14 @@ B:33.4 /0.0 T0:32.7 /220.0
 ### Pressure_Advance.md
 
 https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md
+
+### input shape 
+
+https://www.youtube.com/watch?v=OoWQUcFimX8
+
+```wrap
+[input_shaper]
+shaper_freq_x: 70
+shaper_freq_y: 47
+shaper_type: mzv
+```
