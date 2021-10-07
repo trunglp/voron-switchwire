@@ -130,6 +130,8 @@ ok
 
 https://www.youtube.com/watch?v=OoWQUcFimX8
 
+https://www.klipper3d.org/Measuring_Resonances.html
+
 ```wrap
 [input_shaper]
 shaper_freq_x: 45
@@ -138,6 +140,8 @@ shaper_type: mzv
 ```
 
 ### Selecting max_accel
+
+https://www.klipper3d.org/Resonance_Compensation.html
 
 https://www.klipper3d.org/prints/ringing_tower.stl
 
