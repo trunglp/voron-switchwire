@@ -115,6 +115,17 @@ B:33.4 /0.0 T0:32.7 /220.0
 
 https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md
 
+```wrap
+SET_VELOCITY_LIMIT SQUARE_CORNER_VELOCITY=1 ACCEL=500
+// max_velocity: 300.000000
+// max_accel: 500.000000
+// max_accel_to_decel: 3250.000000
+// square_corner_velocity: 1.000000
+ok
+TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.005
+// Starting tuning test (start=0.000000 factor=0.005000)
+ok
+```
 ### input shape 
 
 https://www.youtube.com/watch?v=OoWQUcFimX8
