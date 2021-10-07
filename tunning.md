@@ -128,6 +128,8 @@ shaper_type: mzv
 
 ### Selecting max_accel
 
+https://www.klipper3d.org/prints/ringing_tower.stl
+
 ```wrap
 SET_PRESSURE_ADVANCE ADVANCE=0
 // pressure_advance: 0.000000
