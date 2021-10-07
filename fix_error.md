@@ -38,3 +38,8 @@ check_gain_time:35
 hysteresis: 10  
 max_error: 130 
 ```
+
+
+#### LỖI KHÔNG KẾT NỐI VỚI MCU
+
+Nguyên nhân lỗi này là do Cáp kết nối , file config MCU, Thẻ nhớ SD card cần format lại đúng chuẩn 
