@@ -121,7 +121,23 @@ https://www.youtube.com/watch?v=OoWQUcFimX8
 
 ```wrap
 [input_shaper]
-shaper_freq_x: 70
-shaper_freq_y: 47
+shaper_freq_x: 45
+shaper_freq_y: 35
 shaper_type: mzv
+```
+
+### Selecting max_accel
+
+```wrap
+SET_PRESSURE_ADVANCE ADVANCE=0
+// pressure_advance: 0.000000
+// pressure_advance_smooth_time: 0.040000
+ok
+TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1250 FACTOR=100 BAND=5
+// Ending tuning test mode
+// Starting tuning test (start=1250.000000 factor=100.000000)
+ok
+TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1250 FACTOR=100 BAND=5
+// Ending tuning test mode
+// Starting tuning test (start=1250.000000 factor=100.000000)
 ```
