@@ -132,6 +132,95 @@ https://www.youtube.com/watch?v=OoWQUcFimX8
 
 https://www.klipper3d.org/Measuring_Resonances.html
 
+![image](https://user-images.githubusercontent.com/38026441/136640537-97f0ea9a-60b8-447d-9656-590493f2beb7.png)
+
+![image](https://user-images.githubusercontent.com/38026441/136640558-afe3f08a-39a4-4bd1-a43c-5fbb4fc01c47.png)
+
+![image](https://user-images.githubusercontent.com/38026441/136640658-237ca161-5a5f-4af3-b2c7-5b6fe78dc31e.png)
+
+```wrap
+Setup 
+
+[mcu rpi]
+serial: /tmp/klipper_host_mcu
+
+[adxl345]
+cs_pin: rpi:None
+
+[resonance_tester]
+accel_chip: adxl345
+probe_points:
+    100,100,20  # an example
+#########################
+
+Send: ACCELEROMETER_QUERY
+Recv: // adxl345 values (x, y, z): -9408.500010, -1453.345530, -1300.361790
+Recv: ok
+
+TEST_RESONANCES AXIS=X
+
+
+Send: TEST_RESONANCES AXIS=X
+Recv: !! Must home axis first: 107.000 100.000 20.000 [0.000]
+Recv: ok
+Send: M105
+Recv: ok B:30.5 /0.0 T0:58.9 /0.0
+Send: M105
+Recv: ok B:30.5 /0.0 T0:58.2 /0.0
+Send: G91
+Recv: ok
+Send: G28 Z0
+Recv: ok
+Send: G90
+Recv: ok
+Send: M105
+Recv: ok B:30.5 /0.0 T0:56.5 /0.0
+Send: TEST_RESONANCES AXIS=X
+Recv: // max_velocity: 200.000000
+Recv: // max_accel: 10000.000000
+Recv: // max_accel_to_decel: 10000.000000
+Recv: // square_corner_velocity: 4.000000
+Recv: // Testing frequency 5 Hz
+Recv: // Testing frequency 6 Hz
+......
+
+Recv: // Testing frequency 109 Hz
+Recv: // Testing frequency 110 Hz
+Recv: // Testing frequency 111 Hz
+Recv: // Testing frequency 112 Hz
+Recv: // Testing frequency 133 Hz
+Recv: // max_velocity: 200.000000
+Recv: // max_accel: 1000.000000
+Recv: // max_accel_to_decel: 500.000000
+Recv: // square_corner_velocity: 4.000000
+Recv: // xy-axis accelerometer stats: drops=0,overflows=3,time_per_sample=0.000314001,start_range=0.000068,end_range=0.000037
+Recv: // Wait for calculations..
+Recv: // Resonances data written to /tmp/resonances_x_20211009_032546.csv file
+Recv: ok
+```    
+
+~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
+
+~/klipper/scripts/calibrate_shaper.py /tmp/resonances_y_*.csv -o /tmp/shaper_calibrate_y.png
+
+
+```wrap
+pi@octopi:/tmp $ rm resonances_x_20211009_032546.csv
+pi@octopi:/tmp $ ~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
+Fitted shaper 'zv' frequency = 34.6 Hz (vibrations = 27.4%, smoothing ~= 0.130)
+To avoid too much smoothing with 'zv', suggested max_accel <= 4500 mm/sec^2
+Fitted shaper 'mzv' frequency = 26.2 Hz (vibrations = 7.6%, smoothing ~= 0.297)
+To avoid too much smoothing with 'mzv', suggested max_accel <= 2000 mm/sec^2
+Fitted shaper 'ei' frequency = 32.8 Hz (vibrations = 7.4%, smoothing ~= 0.299)
+To avoid too much smoothing with 'ei', suggested max_accel <= 2000 mm/sec^2
+Fitted shaper '2hump_ei' frequency = 39.0 Hz (vibrations = 5.4%, smoothing ~= 0.355)
+To avoid too much smoothing with '2hump_ei', suggested max_accel <= 1500 mm/sec^2
+Fitted shaper '3hump_ei' frequency = 48.0 Hz (vibrations = 5.3%, smoothing ~= 0.356)
+To avoid too much smoothing with '3hump_ei', suggested max_accel <= 1500 mm/sec^2
+Recommended shaper is mzv @ 26.2 Hz
+```   
+
+
 ```wrap
 [input_shaper]
 shaper_freq_x: 45
