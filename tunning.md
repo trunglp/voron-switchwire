@@ -220,11 +220,15 @@ To avoid too much smoothing with '3hump_ei', suggested max_accel <= 1500 mm/sec^
 Recommended shaper is mzv @ 26.2 Hz
 ```   
 
+![image](https://user-images.githubusercontent.com/38026441/136641388-c0021fe6-c0a9-4f4b-a05f-5f7ab0e3db84.png)
+
+![image](https://user-images.githubusercontent.com/38026441/136641455-14965b76-8117-4e46-850f-1d7443d0684d.png)
+
 
 ```wrap
 [input_shaper]
-shaper_freq_x: 45
-shaper_freq_y: 35
+shaper_freq_x: 27
+shaper_freq_y: 36
 shaper_type: mzv
 ```
 
