@@ -130,6 +130,8 @@ ok
 
 https://www.youtube.com/watch?v=OoWQUcFimX8
 
+https://www.klipper3d.org/RPi_microcontroller.html
+
 https://www.klipper3d.org/Measuring_Resonances.html
 
 ![image](https://user-images.githubusercontent.com/38026441/136640537-97f0ea9a-60b8-447d-9656-590493f2beb7.png)
