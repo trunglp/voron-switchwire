@@ -253,3 +253,9 @@ TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1250 FACTOR=100 BA
 // Ending tuning test mode
 // Starting tuning test (start=1250.000000 factor=100.000000)
 ```
+
+
+# Verify stepper_buzz
+STEPPER_BUZZ STEPPER=stepper_z
+STEPPER_BUZZ STEPPER=stepper_z1
+STEPPER_BUZZ STEPPER=stepper_z2
