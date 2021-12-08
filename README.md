@@ -14,3 +14,6 @@ https://github.com/VoronDesign/Voron-Switchwire/blob/master/Firmware/skr_mini_e3
 update klipper 
 
 https://github.com/Klipper3d/klipper/blob/master/docs/FAQ.md#how-do-i-upgrade-to-the-latest-software
+
+
+https://github.com/narasak/parrot_3d
