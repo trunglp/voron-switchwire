@@ -290,3 +290,6 @@ STEPPER_BUZZ STEPPER=stepper_z
 STEPPER_BUZZ STEPPER=stepper_z1
 STEPPER_BUZZ STEPPER=stepper_z2
 ```
+
+
+###Extrusion multiplier và Pressure Advance Có quan hệ với nhau, nên chỉnh 1 trong 2 giá trị không đúng dẫn đến in không đẹp 
