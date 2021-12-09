@@ -293,3 +293,13 @@ STEPPER_BUZZ STEPPER=stepper_z2
 
 
 ### Extrusion multiplier và Pressure Advance Có quan hệ với nhau, nên chỉnh 1 trong 2 giá trị không đúng dẫn đến in không đẹp 
+
+Approximate Values
+|Hotend  |	Flow Rate (mm3/sec) |
+| --- | --- |
+|E3D V6  |	11
+|E3D Revo |	15
+|Dragon SF|	15
+|Dragon HF |	24
+|Mosquito |	20
+|Mosquito Magnum |	30
