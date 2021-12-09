@@ -127,6 +127,8 @@ TUNING_TOWER COMMAND=SET_PRESSURE_ADVANCE PARAMETER=ADVANCE START=0 FACTOR=.005
 ok
 ```
 
+https://github.com/AndrewEllis93/Print-Tuning-Guide#tower-method-simple
+
 1) Download and slice the pressure advance tower with your normal print settings (accelerations included).
 The only modifications you should make are these:
 
@@ -141,11 +143,8 @@ The only modifications you should make are these:
 Pressure Advance => Thay đổi sự phân bố của nhựa , không phải thay đổi số lượng nhựa.
 
 Giá trị thấp hơn dẫn đến ít nhựa hơn ở giữa các dòng và nhiều hơn ở các đầu / góc.
+
 Giá trị cao hơn dẫn đến nhiều nhựa hơn ở giữa các dòng và ít hơn ở các đầu / góc.
-
-Đây là một ví dụ:
-
-Giá trị PA: 0, 0,035, 0,05, 0,09, 0,12 (Galileo clockwork / Dragon HF)
 
 Hãy nhớ rằng: Hiếm khi có cái gọi Pressure Advance hoàn hảo 
 
