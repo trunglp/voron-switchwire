@@ -132,13 +132,14 @@ https://github.com/AndrewEllis93/Print-Tuning-Guide#tower-method-simple
 1) Download and slice the pressure advance tower with your normal print settings (accelerations included).
 The only modifications you should make are these:
 
+```wrap 
     120mm/s external perimeter speed
     1 perimeter
     0% infill
     0 top layers
     0 second "minimum layer time" / "layer time goal"
     High fan speed
-
+```
 
 Pressure Advance => Thay đổi sự phân bố của nhựa , không phải thay đổi số lượng nhựa.
 
