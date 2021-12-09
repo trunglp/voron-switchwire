@@ -303,3 +303,23 @@ Approximate Values
 |Dragon HF |	24
 |Mosquito |	20
 |Mosquito Magnum |	30
+
+
+
+## cHow Volumetric Flow Rate Relates to Print Speed
+
+Working out how quickly you can print at a given volumetric flow rate is quite simple:
+
+   ### speed = volumetric flow / layer height / line width
+    
+  ####  167  = 15 / 0.2 / 0.45 
+    
+  ####  222  = 20 / 0.2 / 0.45 
+    
+Or, inversely,
+
+ ### volumetric flow = speed * line width * layer height
+
+For example, if your hotend is capable of 24mm3/sec, and you are printing with 0.4mm line width, at 0.2mm layer height:
+
+    24 / 0.4 / 0.2 = Maximum print speed of 300mm/sec
