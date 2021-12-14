@@ -184,6 +184,10 @@ probe_points:
     100,100,20  # an example
 #########################
 
+![image](https://user-images.githubusercontent.com/38026441/145927453-10abdcd8-dca6-4fbd-aefe-bb961562b550.png)
+
+
+
 Send: ACCELEROMETER_QUERY
 Recv: // adxl345 values (x, y, z): -9408.500010, -1453.345530, -1300.361790
 Recv: ok
