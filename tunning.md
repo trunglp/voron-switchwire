@@ -169,6 +169,12 @@ https://www.klipper3d.org/Measuring_Resonances.html
 
 ![image](https://user-images.githubusercontent.com/38026441/136640658-237ca161-5a5f-4af3-b2c7-5b6fe78dc31e.png)
 
+![image](https://user-images.githubusercontent.com/38026441/145927453-10abdcd8-dca6-4fbd-aefe-bb961562b550.png)
+
+![image](https://user-images.githubusercontent.com/38026441/145928367-62412cae-7906-45a6-a4cd-525befa7bba2.png)
+
+
+
 ```wrap
 Setup 
 
@@ -183,10 +189,6 @@ accel_chip: adxl345
 probe_points:
     100,100,20  # an example
 #########################
-
-![image](https://user-images.githubusercontent.com/38026441/145927453-10abdcd8-dca6-4fbd-aefe-bb961562b550.png)
-![image](https://user-images.githubusercontent.com/38026441/145928367-62412cae-7906-45a6-a4cd-525befa7bba2.png)
-
 
 
 Send: ACCELEROMETER_QUERY
