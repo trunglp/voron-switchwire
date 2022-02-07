@@ -22,3 +22,9 @@ https://github.com/narasak/parrot_3d
 https://github.com/Annex-Engineering/Annex-Engineering_User_Mods
 
 https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Slidr/PanzerChain2.4/stl
+
+https://github.com/Kruze17/HN_Switchwire
+
+https://github.com/boubounokefalos/Ender_SW
+
+
