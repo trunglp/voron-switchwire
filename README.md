@@ -27,4 +27,8 @@ https://github.com/Kruze17/HN_Switchwire
 
 https://github.com/boubounokefalos/Ender_SW
 
+https://github.com/henrikssn/VoronUsers/tree/euler/printer_mods/henrikssn/euler_extruder
+
+https://github.com/kanawati975/Voron_Switchwire
+
 
