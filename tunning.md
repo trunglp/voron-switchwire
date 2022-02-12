@@ -306,7 +306,7 @@ https://www.reddit.com/r/klippers/comments/gxnxij/trying_different_retract_setti
 # Tuning retract
 ```wrap
 [firmware_retraction]
-retract_length: 1.8
+retract_length: 0.8
 #   The length of filament (in mm) to retract when G10 is activated, and to
 #   unretract when G11 is activated (but see unretract_extra_length below).
 #   The default is 0 mm.
@@ -315,10 +315,15 @@ retract_speed: 40
 unretract_extra_length: 0
 #   The speed of retraction, in mm/s. The default is 20 mm/s.
 unretract_speed: 40
+######################
+[gcode_macro SET_RETRACTIONLENGTH]
+gcode:
+  SET_RETRACTION RETRACT_LENGTH={params.LENGTH|float}
+  GET_RETRACTION
 ```
 
 ```wrap
-TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=.005
+TUNING_TOWER COMMAND=SET_RETRACTIONLENGTH PARAMETER=LENGTH START=0.5 FACTOR=.007
 ```
 
 ```wrap
