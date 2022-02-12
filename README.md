@@ -31,4 +31,6 @@ https://github.com/henrikssn/VoronUsers/tree/euler/printer_mods/henrikssn/euler_
 
 https://github.com/kanawati975/Voron_Switchwire
 
+https://githubhelp.com/bcdiaconu/klipper_config
+
 
