@@ -301,6 +301,33 @@ STEPPER_BUZZ STEPPER=stepper_z2
 ```
 
 
+https://www.reddit.com/r/klippers/comments/gxnxij/trying_different_retract_settings_with_tuning/
+
+# Tuning retract
+```wrap
+[firmware_retraction]
+retract_length: 1.8
+#   The length of filament (in mm) to retract when G10 is activated, and to
+#   unretract when G11 is activated (but see unretract_extra_length below).
+#   The default is 0 mm.
+retract_speed: 40
+#   The length (in mm) of *additional* filament to add when unretracting.
+unretract_extra_length: 0
+#   The speed of retraction, in mm/s. The default is 20 mm/s.
+unretract_speed: 40
+```
+
+```wrap
+TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=.005
+```
+
+```wrap
+setup slicer:
+set 0 retraction length (PrusaSlicer/SuperSlicer: Printer Settings -> Extruder 1 -> Retraction -> Length)
+disable wipe (PrusaSlicer/SuperSlicer: Printer Settings -> Extruder 1 -> Retraction -> Wipe while retracting)
+enable use firmware retractions (PrusaSlicer/SuperSlicer: Printer Settings -> General -> Advanced -> Use firmware retractions)
+```
+
 ### Extrusion multiplier và Pressure Advance Có quan hệ với nhau, nên chỉnh 1 trong 2 giá trị không đúng dẫn đến in không đẹp 
 
 Approximate Values
