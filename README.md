@@ -37,3 +37,4 @@ https://github.com/AndrewEllis93/Print-Tuning-Guide
 
 https://github.com/Kruze17/HN_Switchwire/tree/main/Slicer%20configs
 
+https://github.com/hymness1/VoronUsers/tree/148301af584e0df7257529359dd0c115a532dded/printer_mods/hymness1/10x11mm_chain_VSW/STLs
